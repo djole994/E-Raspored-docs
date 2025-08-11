@@ -29,7 +29,8 @@ It allows administrators, professors, and students to plan and track academic ac
 ---
 
 ## 📸 Screenshots
-![Dashboard](media/screenshots/admin-dashboard.png)
+![Dashboard](media/screenshots/01-admin-dashboard.png)
+(media/screenshots/02-admin-users.png)
 ![Weekly Calendar View](media/screenshots/02-calendar-week.png)
 ![Create Exam](media/screenshots/03-create-exam.png)
 
