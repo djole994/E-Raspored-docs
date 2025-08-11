@@ -116,3 +116,87 @@ More in the **[screenshot gallery](media/screenshots/)**.
 ## 📜 License
 © 2025 Đorđe Radović. All rights reserved.  
 This repository is for presentation purposes only. Unauthorized use, reproduction, or distribution is prohibited.
+
+
+
+flowchart LR
+  %% Klasteri radi preglednosti
+  subgraph SEC[Sigurnost & RBAC]
+    U[Users]
+    R[Roles]
+    PU[ProjectUsers]
+    Pm[Permissions]
+    U---PU
+    R---PU
+    U---Pm
+  end
+
+  subgraph PRJ[Projekti & Board]
+    PR[Projects]
+    BC[Columns]
+    T[Tasks]
+    L[Labels]
+    TL[TaskLabels]
+    TL---T
+    TL---L
+    PR---BC
+    PR---T
+    PR---L
+    BC---T
+  end
+
+  subgraph SPRINT[Sprintovi]
+    SP[Sprints]
+    TS[TaskSprints]
+    SP---TS
+    TS---T
+  end
+
+  subgraph COLLAB[Saradnja]
+    C[Comments]
+    M[Mentions]
+    A[Attachments]
+    W[Watchers]
+    CL[ChecklistItems]
+    C---M
+    C---A
+    T---C
+    T---A
+    T---W
+    T---CL
+  end
+
+  subgraph LINKS[Relacije Issue‑a]
+    TK[TaskLinks]
+    T---TK
+  end
+
+  subgraph AUDIT[Audit & Historija]
+    AL[AuditLogs]
+    TH[TaskHistory]
+    T---TH
+  end
+
+  subgraph NOTIF[Notifikacije]
+    N[Notifications]
+  end
+
+  subgraph INTEG[Integracije]
+    OX[OutboxMessages]
+    WH[Webhooks]
+    WD[WebhookDeliveries]
+    WH---WD
+    OX---WD
+  end
+
+  %% Povezivanja između klastera
+  U---PR
+  PU---PR
+  PR---SP
+  C---N
+  M---N
+  OX-.generišu se iz događaja u->PRJ
+  OX-.generišu se iz događaja u->COLLAB
+  AL-.audit svih promjena.->PRJ
+  AL-.audit svih promjena.->COLLAB
+
