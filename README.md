@@ -62,6 +62,7 @@ More in the **[screenshot gallery](media/screenshots/)**.
 - [System Overview](docs/overview.md)
 - [Feature List](docs/features.md)
 - [Architecture](docs/architecture.md)
+- [Roadmap](docs/roadmap.md)
 - [FAQ](docs/faq.md)
 
 ---
