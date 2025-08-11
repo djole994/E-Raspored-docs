@@ -9,12 +9,10 @@ eRaspored follows a multi-layered approach:
 - **Integration (Google Calendar API)** – event synchronization
 
 ## High-Level Diagram
-
 ```mermaid
 flowchart LR
-A[Browser (Users)] --> B["ASP.NET Core MVC and API"]
-B --> C[Application / Domain Logic]
+A["Browser (Users)"] --> B["ASP NET Core MVC and API"]
+B --> C["Application / Domain Logic"]
 C --> D["EF Core"]
 D --> E["PostgreSQL"]
 C --> F["Google Calendar API"]
-
