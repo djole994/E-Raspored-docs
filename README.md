@@ -44,35 +44,35 @@ It allows administrators, professors, and students to plan and track academic ac
 </details>
 
 <details>
-<summary>📸 Nastava - Desktop</summary>
+<summary>📸 Schedule – Desktop</summary>
 
 ![Nastava-Desktop](media/screenshots/03-nastava-desktop.png)
 
 </details>
 
 <details>
-<summary>📸 Nastava - Mobile</summary>
+<summary>📸 Schedule – Mobile</summary>
 
 ![Nastava-Mobile](media/screenshots/04-nastava-mobile.png)
 
 </details>
 
 <details>
-<summary>📸 Ispit - View</summary>
+<summary>📸 Exam – Overview</summary>
 
 ![Ispit-View](media/screenshots/05-ispit-view.png)
 
 </details>
 
 <details>
-<summary>📸 Ispit - Create</summary>
+<summary>📸 Exam – Create</summary>
 
 ![Ispit-Create](media/screenshots/06-ispit-create.png)
 
 </details>
 
 <details>
-<summary>📸 Student Dashboard + Rating + Help Widget</summary>
+<summary>📸 Student Dashboard & Feedback & Help Widget</summary>
 
 ![Student-Dashboard](media/screenshots/07-studentdash-rate-helpwidget.png)
 
