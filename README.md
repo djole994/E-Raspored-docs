@@ -29,54 +29,24 @@ It allows administrators, professors, and students to plan and track academic ac
 ---
 
 ## 📸 Screenshots
-<details>
-<summary>📸 Admin Dashboard</summary>
+<p float="left">
+  <img src="media/screenshots/01-admin-dashboard.png" width="45%" />
+  <img src="media/screenshots/02-admin-users.png" width="45%" />
+</p>
 
-![Dashboard](media/screenshots/01-admin-dashboard.png)
+<p float="left">
+  <img src="media/screenshots/03-nastava-desktop.png" width="45%" />
+  <img src="media/screenshots/04-nastava-mobile.png" width="45%" />
+</p>
 
-</details>
+<p float="left">
+  <img src="media/screenshots/05-ispit-view.png" width="45%" />
+  <img src="media/screenshots/06-ispit-create.png" width="45%" />
+</p>
 
-<details>
-<summary>📸 Admin Users</summary>
-
-![Admin-Users](media/screenshots/02-admin-users.png)
-
-</details>
-
-<details>
-<summary>📸 Nastava - Desktop</summary>
-
-![Nastava-Desktop](media/screenshots/03-nastava-desktop.png)
-
-</details>
-
-<details>
-<summary>📸 Nastava - Mobile</summary>
-
-![Nastava-Mobile](media/screenshots/04-nastava-mobile.png)
-
-</details>
-
-<details>
-<summary>📸 Ispit - View</summary>
-
-![Ispit-View](media/screenshots/05-ispit-view.png)
-
-</details>
-
-<details>
-<summary>📸 Ispit - Create</summary>
-
-![Ispit-Create](media/screenshots/06-ispit-create.png)
-
-</details>
-
-<details>
-<summary>📸 Student Dashboard + Rating + Help Widget</summary>
-
-![Student-Dashboard](media/screenshots/07-studentdash-rate-helpwidget.png)
-
-</details>
+<p float="left">
+  <img src="media/screenshots/07-studentdash-rate-helpwidget.png" width="45%" />
+</p>
 
 
 More in the **[screenshot gallery](media/screenshots/)**.
