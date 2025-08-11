@@ -14,5 +14,5 @@ flowchart LR
 A["Browser (Users)"] --> B["ASP NET Core MVC and API"]
 B --> C["Application / Domain Logic"]
 C --> D["EF Core"]
-D --> E["PostgreSQL"]
+D --> E["SQL"]
 C --> F["Google Calendar API"]
