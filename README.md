@@ -31,6 +31,7 @@ It allows administrators, professors, and students to plan and track academic ac
 ## 📸 Screenshots
 ![Dashboard](media/screenshots/01-admin-dashboard.png)
 ![Admin-Users](/media/screenshots/02-admin-users.png)
+![Nastava-Desktop](/media/screenshots/03-nastava-desktop.png)
 ![Weekly Calendar View](media/screenshots/02-calendar-week.png)
 ![Create Exam](media/screenshots/03-create-exam.png)
 
