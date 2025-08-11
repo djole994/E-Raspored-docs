@@ -12,9 +12,9 @@ eRaspored follows a multi-layered approach:
 
 ```mermaid
 flowchart LR
-A[Browser (Users)] --> B[ASP.NET Core MVC + API]
-B --> C[Application/Domain Logic]
-C --> D[EF Core]
-D --> E[(PostgreSQL)]
-C --> F[Google Calendar API]
+A[Browser (Users)] --> B["ASP.NET Core MVC and API"]
+B --> C[Application / Domain Logic]
+C --> D["EF Core"]
+D --> E["PostgreSQL"]
+C --> F["Google Calendar API"]
 
