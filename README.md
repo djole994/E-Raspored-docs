@@ -118,106 +118,103 @@ More in the **[screenshot gallery](media/screenshots/)**.
 This repository is for presentation purposes only. Unauthorized use, reproduction, or distribution is prohibited.
 
 
-
+## Overview
 ```mermaid 
 
 %%{init: {"theme":"neutral","themeVariables":{
-  "primaryColor":"#6096B4",
-  "secondaryColor":"#93BFCF",
-  "tertiaryColor":"#BDCDD6",
-  "lineColor":"#2f4f60",
-  "fontFamily":"Inter,Segoe UI,Arial",
-  "fontSize":"14px"
+  "primaryColor":"#6096B4","secondaryColor":"#93BFCF","tertiaryColor":"#BDCDD6",
+  "lineColor":"#2f4f60","fontFamily":"Inter,Segoe UI,Arial","fontSize":"14px"
 }, "flowchart": { "useMaxWidth": false } }}%%
 flowchart LR
-  %% Clusters
-  subgraph RBAC[Security & RBAC]
-    U[Users]
-    R[Roles]
-    P[Permissions]
-  end
+  RBAC[Security and RBAC]
+  CORE[Domain core]
+  OUTB[Outbox event store]
+  GCAL[Google Calendar sync]
+  WH[Webhooks]
+  NT[Notifications - email and push]
+  FB[Feedback and ratings]
+  AUD[Audit logs]
+  DASH[Dashboards - Admin, Organizer, Professor, Student]
 
-  subgraph Core[Domain core]
-    PRG[Study<br/>Programs]
-    Y[Study<br/>Years]
-    SBJ[Subjects]
-    PROFS[Professors]
-    STUDS[Students]
-    RM[Rooms]
-    CLS[Class<br/>Sessions]
-    EX[Exams]
-    BK[Bookings /<br/>Reservations]
-    CC[Conflict<br/>Checker]
-  end
-
-  subgraph Dash[Dashboards]
-    DPROF[Professor<br/>dashboard]
-    DSTUD[Student<br/>dashboard]
-    DORG[Organizer<br/>dashboard]
-    DADM[Admin<br/>dashboard]
-  end
-
-  subgraph FB[Feedback]
-    FBK[Feedback and ratings]
-    AN[Feedback analytics]
-  end
-
-  subgraph Notif[Notifications]
-    NT[Notifications – email and push]
-  end
-
-  subgraph Int[Integrations]
-    OUTB[Outbox event store]
-    GCAL[Google Calendar sync]
-    WH[Webhooks]
-  end
-
-  subgraph AUD[Audit and history]
-    AL[Audit logs]
-  end
-
-  %% Edges (svjetlije i tanje)
-  U --> R --> P
-  PRG --> Y --> SBJ
-  SBJ --> CLS
-  SBJ --> EX
-  RM --> BK
-  CLS --> BK
-  EX  --> BK
-  PROFS --> CLS
-  PROFS --> EX
-  STUDS --> FBK
-  EX --> FBK
-  CLS --> FBK
-
-  DORG --> CLS
-  DORG --> EX
-  CLS --> CC
-  EX  --> CC
-  CC -->|OK| OUTB
+  RBAC --> CORE
+  CORE --> FB
+  CORE --> NT
+  CORE --> OUTB
   OUTB --> GCAL
   OUTB --> WH
+  NT --> DASH
 
-  CLS --> NT
-  EX  --> NT
+  CORE -.audit.-> AUD
+  FB   -.audit.-> AUD
+  NT   -.audit.-> AUD
+  OUTB -.audit.-> AUD
+
+  linkStyle default stroke:#8aa3af,stroke-width:1.1,opacity:0.75;
+
+```
+
+
+## Core domain
+```mermaid 
+
+%%{init: {"theme":"neutral","themeVariables":{
+  "primaryColor":"#6096B4","secondaryColor":"#93BFCF","tertiaryColor":"#BDCDD6",
+  "lineColor":"#2f4f60","fontFamily":"Inter,Segoe UI,Arial","fontSize":"14px"
+}, "flowchart": { "useMaxWidth": false } }}%%
+flowchart LR
+  PRG[Study Programs] --> Y[Study Years] --> SBJ[Subjects]
+  PROFS[Professors] --> CLS[Class Sessions]
+  PROFS --> EX[Exams]
+  SBJ --> CLS
+  SBJ --> EX
+  RM[Rooms] --> BK[Bookings and Reservations]
+  CLS --> BK
+  EX  --> BK
+  CC[Conflict Checker]
+  CLS --> CC
+  EX  --> CC
+  STUDS[Students]
+
+  linkStyle default stroke:#8aa3af,stroke-width:1.1,opacity:0.75;
+
+
+```
+
+
+## Integrations, Notifications, Audit, RBAC, Dashboards
+```mermaid 
+
+%%{init: {"theme":"neutral","themeVariables":{
+  "primaryColor":"#6096B4","secondaryColor":"#93BFCF","tertiaryColor":"#BDCDD6",
+  "lineColor":"#2f4f60","fontFamily":"Inter,Segoe UI,Arial","fontSize":"14px"
+}, "flowchart": { "useMaxWidth": false } }}%%
+flowchart LR
+  CORE[Domain core] --> OUTB[Outbox event store]
+  OUTB --> GCAL[Google Calendar sync]
+  OUTB --> WH[Webhooks]
+
+  CORE --> NT[Notifications - email and push]
+
+  subgraph DASH[Dashboards]
+    DADM[Admin]
+    DORG[Organizer]
+    DPROF[Professor]
+    DSTUD[Student]
+  end
+  NT --> DADM
+  NT --> DORG
   NT --> DPROF
   NT --> DSTUD
 
-  CLS --> DPROF
-  EX  --> DPROF
-  CLS --> DSTUD
-  EX  --> DSTUD
-  PRG --> DADM
-  Y   --> DADM
-  BK  --> DADM
+  subgraph RBAC[Security and RBAC]
+    U[Users] --> R[Roles] --> P[Permissions]
+  end
 
-  CLS -.audit.-> AL
-  EX  -.audit.-> AL
-  FBK -.audit.-> AL
-  NT  -.audit.-> AL
+  AUD[Audit logs]
+  CORE -.audit.-> AUD
+  NT   -.audit.-> AUD
+  OUTB -.audit.-> AUD
 
-  %% Global style za sve linkove
   linkStyle default stroke:#8aa3af,stroke-width:1.1,opacity:0.75;
-
 
 ```
