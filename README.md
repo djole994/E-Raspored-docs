@@ -89,36 +89,12 @@ More in the **[screenshot gallery](media/screenshots/)**.
 
 ---
 
-## 🔒 Security Highlights
-- HTTPS enforced
-- Two-factor authentication on Google accounts
-- Role-based permissions per module
-- Data validation on multiple levels (client, server, database)
-- Restricted access to Google Calendar API
 
----
+## Architecture
 
-## 📄 Documentation
-- [System Overview](docs/overview.md)
-- [Feature List](docs/features.md)
-- [Architecture](docs/architecture.md)
-- [Roadmap](docs/roadmap.md)
-- [FAQ](docs/faq.md)
+<details open>
+  <summary><b>1) Overview</b></summary>
 
----
-
-## 📬 Contact
-📧 Email: djordjeradovic94@gmail.com  
-🌐 Demo: *(available upon request)*
-
----
-
-## 📜 License
-© 2025 Đorđe Radović. All rights reserved.  
-This repository is for presentation purposes only. Unauthorized use, reproduction, or distribution is prohibited.
-
-
-## Overview
 ```mermaid 
 
 %%{init: {"theme":"neutral","themeVariables":{
@@ -156,6 +132,43 @@ flowchart LR
 
 
 ```
+</details>
+
+
+
+---
+
+## 🔒 Security Highlights
+- HTTPS enforced
+- Two-factor authentication on Google accounts
+- Role-based permissions per module
+- Data validation on multiple levels (client, server, database)
+- Restricted access to Google Calendar API
+
+---
+
+## 📄 Documentation
+- [System Overview](docs/overview.md)
+- [Feature List](docs/features.md)
+- [Architecture](docs/architecture.md)
+- [Roadmap](docs/roadmap.md)
+- [FAQ](docs/faq.md)
+
+---
+
+## 📬 Contact
+📧 Email: djordjeradovic94@gmail.com  
+🌐 Demo: *(available upon request)*
+
+---
+
+## 📜 License
+© 2025 Đorđe Radović. All rights reserved.  
+This repository is for presentation purposes only. Unauthorized use, reproduction, or distribution is prohibited.
+
+
+## Overview
+
 
 
 ## Core domain
