@@ -126,9 +126,10 @@ This repository is for presentation purposes only. Unauthorized use, reproductio
   "secondaryColor":"#93BFCF",
   "tertiaryColor":"#BDCDD6",
   "lineColor":"#2f4f60",
-  "fontFamily":"Inter,Segoe UI,Arial"
-}}}%%
-flowchart TB
+  "fontFamily":"Inter,Segoe UI,Arial",
+  "fontSize":"14px"
+}, "flowchart": { "useMaxWidth": false } }}%%
+flowchart LR
   %% Clusters
   subgraph RBAC[Security & RBAC]
     U[Users]
@@ -137,23 +138,23 @@ flowchart TB
   end
 
   subgraph Core[Domain core]
-    PRG[Study Programs]
-    Y[Study Years]
+    PRG[Study<br/>Programs]
+    Y[Study<br/>Years]
     SBJ[Subjects]
     PROFS[Professors]
     STUDS[Students]
     RM[Rooms]
-    CLS[Class Sessions]
+    CLS[Class<br/>Sessions]
     EX[Exams]
-    BK[Bookings/Reservations]
-    CC[Conflict Checker]
+    BK[Bookings /<br/>Reservations]
+    CC[Conflict<br/>Checker]
   end
 
   subgraph Dash[Dashboards]
-    DPROF[Professor dashboard]
-    DSTUD[Student dashboard]
-    DORG[Organizer dashboard]
-    DADM[Admin dashboard]
+    DPROF[Professor<br/>dashboard]
+    DSTUD[Student<br/>dashboard]
+    DORG[Organizer<br/>dashboard]
+    DADM[Admin<br/>dashboard]
   end
 
   subgraph FB[Feedback]
@@ -162,7 +163,7 @@ flowchart TB
   end
 
   subgraph Notif[Notifications]
-    NT[Notifications - email and push]
+    NT[Notifications – email and push]
   end
 
   subgraph Int[Integrations]
@@ -175,7 +176,7 @@ flowchart TB
     AL[Audit logs]
   end
 
-  %% Edges
+  %% Edges (svjetlije i tanje)
   U --> R --> P
   PRG --> Y --> SBJ
   SBJ --> CLS
@@ -214,5 +215,9 @@ flowchart TB
   EX  -.audit.-> AL
   FBK -.audit.-> AL
   NT  -.audit.-> AL
+
+  %% Global style za sve linkove
+  linkStyle default stroke:#8aa3af,stroke-width:1.1,opacity:0.75;
+
 
 ```
