@@ -118,6 +118,9 @@ More in the **[screenshot gallery](media/screenshots/)**.
 This repository is for presentation purposes only. Unauthorized use, reproduction, or distribution is prohibited.
 
 
+
+mermaid ```
+
 %%{init: {"theme":"neutral","themeVariables":{
   "primaryColor":"#6096B4",
   "secondaryColor":"#93BFCF",
@@ -212,3 +215,4 @@ flowchart TB
   FBK -.audit.-> AL
   NT  -.audit.-> AL
 
+```
