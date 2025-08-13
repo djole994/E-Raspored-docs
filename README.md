@@ -120,10 +120,14 @@ This repository is for presentation purposes only. Unauthorized use, reproductio
 
 
 
+## 1) Pregled sistema (visoki nivo)
 
-
+```mermaid
+%%{init: {'theme':'neutral','themeVariables': {
+  'primaryColor': '#6096B4','secondaryColor': '#93BFCF','tertiaryColor': '#BDCDD6',
+  'lineColor':'#2f4f60','fontFamily':'Inter,Segoe UI,Arial'
+}}}%%
 flowchart TB
-  %% ====== Klasteri ======
   subgraph RBAC[Sigurnost & RBAC]
     U[Users]
     R[Roles]
@@ -169,7 +173,6 @@ flowchart TB
     AL[AuditLogs]
   end
 
-  %% ====== Veze ======
   U --> R --> P
   PRG --> Y --> SBJ
   SBJ --> CLS
@@ -183,7 +186,6 @@ flowchart TB
   EX --> FBK
   CLS --> FBK
 
-  %% Kreiranje i tokovi
   DORG --> CLS
   DORG --> EX
   CLS --> CC
@@ -192,13 +194,11 @@ flowchart TB
   OUTB --> GCAL
   OUTB --> WH
 
-  %% Notifikacije i prikaz
   CLS --> NT
   EX --> NT
   NT --> DPROF
   NT --> DSTUD
 
-  %% Dashboards prikaz podataka
   CLS --> DPROF
   EX --> DPROF
   CLS --> DSTUD
@@ -207,27 +207,12 @@ flowchart TB
   Y --> DADM
   BK --> DADM
 
-  %% Audit
   CLS -.audit.-> AL
   EX -.audit.-> AL
   FBK -.audit.-> AL
   NT  -.audit.-> AL
 
-  %% ====== Stilovi ======
-  classDef primary fill:#6096B4,color:#fff,stroke:#2f4f60;
-  classDef secondary fill:#93BFCF,color:#0b2230,stroke:#4a6e7e;
-  classDef tertiary fill:#BDCDD6,color:#0b2230,stroke:#6a7f87;
-  classDef light fill:#EEE9DA,color:#1a1a1a,stroke:#c9bfae;
-
-  class RBAC,Core,Dash,FB,Notif,Int,AUD light;
-  class PRG,Y,SBJ,RM,CLS,EX,BK primary;
-  class PROFS,STUDS,CC secondary;
-  class OUTB,GCAL,WH tertiary;
-  class DPROF,DSTUD,DORG,DADM tertiary;
-  class FBK,AN,NT,AL tertiary;
-
-  %% (Opcionalno) Klikabilni ankerni linkovi ka sekcijama niže:
-  click CC "#scenario-kreiranje-ispita" "Sken konfliktâ — idi na sekvencu"
+  click CC "#scenario-kreiranje-ispita" "Sken konfliktâ — sekvenca"
   click OUTB "#integracije" "Outbox & integracije"
   click AL "#audit" "Audit logovi"
 
