@@ -133,8 +133,76 @@ flowchart LR
 
 ```
 </details>
+<details open>
+  <summary><b>2) Core domain</b></summary>
+
+```mermaid 
+
+%%{init: {"theme":"neutral","themeVariables":{
+  "primaryColor":"#6096B4","secondaryColor":"#93BFCF","tertiaryColor":"#BDCDD6",
+  "lineColor":"#2f4f60","fontFamily":"Inter,Segoe UI,Arial","fontSize":"14px"
+}, "flowchart": { "useMaxWidth": false } }}%%
+flowchart LR
+  PRG[Study Programs] --> Y[Study Years] --> SBJ[Subjects]
+  PROFS[Professors] --> CLS[Class Sessions]
+  PROFS --> EX[Exams]
+  SBJ --> CLS
+  SBJ --> EX
+
+  RM[Rooms] --> BK[Bookings and reservations]
+  CLS --> BK
+  EX  --> BK
+
+  CC[Conflict checker]
+  CLS --> CC
+  EX  --> CC
+
+  STUDS[Students]
+
+  linkStyle default stroke:#8aa3af,stroke-width:1.1,opacity:0.75;
 
 
+
+```
+</details>
+<details open>
+  <summary><b>3) Integrations & Ops </b></summary>
+
+```mermaid 
+%%{init: {"theme":"neutral","themeVariables":{
+  "primaryColor":"#6096B4","secondaryColor":"#93BFCF","tertiaryColor":"#BDCDD6",
+  "lineColor":"#2f4f60","fontFamily":"Inter,Segoe UI,Arial","fontSize":"14px"
+}, "flowchart": { "useMaxWidth": false } }}%%
+flowchart LR
+  CORE[Domain core] --> OUTB[Outbox event store]
+  OUTB --> GCAL[Google Calendar sync]
+  OUTB --> WH[Webhooks]
+
+  RECON[Sync monitor - calendar reconciliation]
+  CORE --> RECON
+  GCAL --> RECON
+
+  subgraph DASH[Dashboards]
+    DADM[Admin]
+    DORG[Organizer]
+    DPROF[Professor]
+    DSTUD[Student]
+  end
+  RECON --> DADM
+
+  subgraph RBAC[Security and RBAC]
+    U[Users] --> R[Roles] --> P[Permissions]
+  end
+
+  AUD[Audit logs]
+  CORE -.audit.-> AUD
+  OUTB -.audit.-> AUD
+  RECON -.audit.-> AUD
+
+  linkStyle default stroke:#8aa3af,stroke-width:1.1,opacity:0.75;
+
+```
+</details>
 
 ---
 
