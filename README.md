@@ -121,7 +121,6 @@ This repository is for presentation purposes only. Unauthorized use, reproductio
 
 ## 1) System overview (high level)
 
-
 %%{init: {"theme":"neutral","themeVariables":{
   "primaryColor":"#6096B4",
   "secondaryColor":"#93BFCF",
@@ -130,7 +129,7 @@ This repository is for presentation purposes only. Unauthorized use, reproductio
   "fontFamily":"Inter,Segoe UI,Arial"
 }}}%%
 flowchart TB
-  %% ====== Clusters ======
+  %% Clusters
   subgraph RBAC[Security & RBAC]
     U[Users]
     R[Roles]
@@ -176,14 +175,14 @@ flowchart TB
     AL[Audit logs]
   end
 
-  %% ====== Edges ======
+  %% Edges
   U --> R --> P
   PRG --> Y --> SBJ
   SBJ --> CLS
   SBJ --> EX
   RM --> BK
   CLS --> BK
-  EX --> BK
+  EX  --> BK
   PROFS --> CLS
   PROFS --> EX
   STUDS --> FBK
@@ -193,36 +192,25 @@ flowchart TB
   DORG --> CLS
   DORG --> EX
   CLS --> CC
-  EX --> CC
+  EX  --> CC
   CC -->|OK| OUTB
   OUTB --> GCAL
   OUTB --> WH
 
   CLS --> NT
-  EX --> NT
+  EX  --> NT
   NT --> DPROF
   NT --> DSTUD
 
   CLS --> DPROF
-  EX --> DPROF
+  EX  --> DPROF
   CLS --> DSTUD
-  EX --> DSTUD
+  EX  --> DSTUD
   PRG --> DADM
-  Y --> DADM
-  BK --> DADM
+  Y   --> DADM
+  BK  --> DADM
 
   CLS -.audit.-> AL
   EX  -.audit.-> AL
   FBK -.audit.-> AL
   NT  -.audit.-> AL
-
-  %% Optional anchors to sections below
-  click CC "#exam-creation-sequence" "Go to sequence"
-  click OUTB "#integrations" "Outbox & integrations"
-  click AL "#audit" "Audit logs"
-
-
-
-
-
-
