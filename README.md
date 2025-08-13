@@ -118,7 +118,6 @@ More in the **[screenshot gallery](media/screenshots/)**.
 This repository is for presentation purposes only. Unauthorized use, reproduction, or distribution is prohibited.
 
 
-```mermaid
 %%{init: {"theme":"neutral","themeVariables":{
   "primaryColor":"#6096B4",
   "secondaryColor":"#93BFCF",
@@ -155,12 +154,12 @@ flowchart TB
   end
 
   subgraph FB[Feedback]
-    FBK[Feedback & ratings]
+    FBK[Feedback and ratings]
     AN[Feedback analytics]
   end
 
   subgraph Notif[Notifications]
-    NT[Notifications (email & push)]
+    NT[Notifications - email and push]
   end
 
   subgraph Int[Integrations]
@@ -169,7 +168,7 @@ flowchart TB
     WH[Webhooks]
   end
 
-  subgraph AUD[Audit & history]
+  subgraph AUD[Audit and history]
     AL[Audit logs]
   end
 
@@ -213,4 +212,3 @@ flowchart TB
   FBK -.audit.-> AL
   NT  -.audit.-> AL
 
-```
