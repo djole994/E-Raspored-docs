@@ -90,7 +90,7 @@ More in the **[screenshot gallery](media/screenshots/)**.
 ---
 
 
-## Architecture
+## Architecture <img src="docs/assets/architecture-icon.svg" width="22" alt="Architecture icon" />
 
 <details open>
   <summary><b>1) Overview</b></summary>
