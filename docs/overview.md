@@ -10,7 +10,7 @@
 
 ## Users
 - **Admin/Organizer** – manages schedules, rooms, and users
-- **Professor** – creates/edits own events
+- **Professor** – has a complete record of all their classes and exams (past & upcoming)
 - **Student** – views schedule and rates classes/exams
 
 ## Core capabilities
