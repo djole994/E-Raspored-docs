@@ -116,3 +116,118 @@ More in the **[screenshot gallery](media/screenshots/)**.
 ## 📜 License
 © 2025 Đorđe Radović. All rights reserved.  
 This repository is for presentation purposes only. Unauthorized use, reproduction, or distribution is prohibited.
+
+
+
+
+
+
+flowchart TB
+  %% ====== Klasteri ======
+  subgraph RBAC[Sigurnost & RBAC]
+    U[Users]
+    R[Roles]
+    P[Permissions]
+  end
+
+  subgraph Core[Jezgro domena]
+    PRG[StudijskiProgrami]
+    Y[Godine studija]
+    SBJ[Predmeti]
+    PROFS[Profesori]
+    STUDS[Studenti]
+    RM[Sobe/Učionice]
+    CLS[Nastava (ClassSessions)]
+    EX[Isipiti (Exams)]
+    BK[Bookings/Rezervacije]
+    CC[Checker konflikata]
+  end
+
+  subgraph Dash[Dashboard-i]
+    DPROF[Profesor dashboard]
+    DSTUD[Student dashboard]
+    DORG[Organizator dashboard]
+    DADM[Admin dashboard]
+  end
+
+  subgraph FB[Feedback]
+    FBK[Ocjene & komentari]
+    AN[Analitika feedback-a]
+  end
+
+  subgraph Notif[Notifikacije]
+    NT[Notifications (email/push)]
+  end
+
+  subgraph Int[Integracije]
+    OUTB[Outbox event-store]
+    GCAL[Google Calendar sync]
+    WH[Webhooks]
+  end
+
+  subgraph AUD[Audit & istorija]
+    AL[AuditLogs]
+  end
+
+  %% ====== Veze ======
+  U --> R --> P
+  PRG --> Y --> SBJ
+  SBJ --> CLS
+  SBJ --> EX
+  RM --> BK
+  CLS --> BK
+  EX --> BK
+  PROFS --> CLS
+  PROFS --> EX
+  STUDS --> FBK
+  EX --> FBK
+  CLS --> FBK
+
+  %% Kreiranje i tokovi
+  DORG --> CLS
+  DORG --> EX
+  CLS --> CC
+  EX --> CC
+  CC -->|OK| OUTB
+  OUTB --> GCAL
+  OUTB --> WH
+
+  %% Notifikacije i prikaz
+  CLS --> NT
+  EX --> NT
+  NT --> DPROF
+  NT --> DSTUD
+
+  %% Dashboards prikaz podataka
+  CLS --> DPROF
+  EX --> DPROF
+  CLS --> DSTUD
+  EX --> DSTUD
+  PRG --> DADM
+  Y --> DADM
+  BK --> DADM
+
+  %% Audit
+  CLS -.audit.-> AL
+  EX -.audit.-> AL
+  FBK -.audit.-> AL
+  NT  -.audit.-> AL
+
+  %% ====== Stilovi ======
+  classDef primary fill:#6096B4,color:#fff,stroke:#2f4f60;
+  classDef secondary fill:#93BFCF,color:#0b2230,stroke:#4a6e7e;
+  classDef tertiary fill:#BDCDD6,color:#0b2230,stroke:#6a7f87;
+  classDef light fill:#EEE9DA,color:#1a1a1a,stroke:#c9bfae;
+
+  class RBAC,Core,Dash,FB,Notif,Int,AUD light;
+  class PRG,Y,SBJ,RM,CLS,EX,BK primary;
+  class PROFS,STUDS,CC secondary;
+  class OUTB,GCAL,WH tertiary;
+  class DPROF,DSTUD,DORG,DADM tertiary;
+  class FBK,AN,NT,AL tertiary;
+
+  %% (Opcionalno) Klikabilni ankerni linkovi ka sekcijama niže:
+  click CC "#scenario-kreiranje-ispita" "Sken konfliktâ — idi na sekvencu"
+  click OUTB "#integracije" "Outbox & integracije"
+  click AL "#audit" "Audit logovi"
+
