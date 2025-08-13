@@ -131,25 +131,29 @@ flowchart LR
   OUTB[Outbox event store]
   GCAL[Google Calendar sync]
   WH[Webhooks]
-  NT[Notifications - email and push]
+  RECON[Sync monitor - calendar reconciliation]
   FB[Feedback and ratings]
   AUD[Audit logs]
-  DASH[Dashboards - Admin, Organizer, Professor, Student]
+  DADM[Admin dashboard]
+  DOTH[Other dashboards - Organizer, Professor, Student]
 
   RBAC --> CORE
   CORE --> FB
-  CORE --> NT
   CORE --> OUTB
   OUTB --> GCAL
   OUTB --> WH
-  NT --> DASH
+
+  CORE --> RECON
+  GCAL --> RECON
+  RECON --> DADM
 
   CORE -.audit.-> AUD
   FB   -.audit.-> AUD
-  NT   -.audit.-> AUD
   OUTB -.audit.-> AUD
+  RECON -.audit.-> AUD
 
   linkStyle default stroke:#8aa3af,stroke-width:1.1,opacity:0.75;
+
 
 ```
 
@@ -167,15 +171,19 @@ flowchart LR
   PROFS --> EX[Exams]
   SBJ --> CLS
   SBJ --> EX
-  RM[Rooms] --> BK[Bookings and Reservations]
+
+  RM[Rooms] --> BK[Bookings and reservations]
   CLS --> BK
   EX  --> BK
-  CC[Conflict Checker]
+
+  CC[Conflict checker]
   CLS --> CC
   EX  --> CC
+
   STUDS[Students]
 
   linkStyle default stroke:#8aa3af,stroke-width:1.1,opacity:0.75;
+
 
 
 ```
@@ -193,7 +201,9 @@ flowchart LR
   OUTB --> GCAL[Google Calendar sync]
   OUTB --> WH[Webhooks]
 
-  CORE --> NT[Notifications - email and push]
+  RECON[Sync monitor - calendar reconciliation]
+  CORE --> RECON
+  GCAL --> RECON
 
   subgraph DASH[Dashboards]
     DADM[Admin]
@@ -201,10 +211,7 @@ flowchart LR
     DPROF[Professor]
     DSTUD[Student]
   end
-  NT --> DADM
-  NT --> DORG
-  NT --> DPROF
-  NT --> DSTUD
+  RECON --> DADM
 
   subgraph RBAC[Security and RBAC]
     U[Users] --> R[Roles] --> P[Permissions]
@@ -212,9 +219,10 @@ flowchart LR
 
   AUD[Audit logs]
   CORE -.audit.-> AUD
-  NT   -.audit.-> AUD
   OUTB -.audit.-> AUD
+  RECON -.audit.-> AUD
 
   linkStyle default stroke:#8aa3af,stroke-width:1.1,opacity:0.75;
+
 
 ```
