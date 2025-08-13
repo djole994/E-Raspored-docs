@@ -118,10 +118,100 @@ More in the **[screenshot gallery](media/screenshots/)**.
 This repository is for presentation purposes only. Unauthorized use, reproduction, or distribution is prohibited.
 
 
+```mermaid
 
-## 1) System overview (high level)
-flowchart LR
-  A[Start] --> B{Renders on GitHub?}
-  B -->|Yes| C[Great]
-  B -->|No| D[Check backticks & line breaks]
 
+%%{init: {"theme":"neutral","themeVariables":{
+  "primaryColor":"#6096B4",
+  "secondaryColor":"#93BFCF",
+  "tertiaryColor":"#BDCDD6",
+  "lineColor":"#2f4f60",
+  "fontFamily":"Inter,Segoe UI,Arial"
+}}}%%
+flowchart TB
+  %% Clusters
+  subgraph RBAC[Security & RBAC]
+    U[Users]
+    R[Roles]
+    P[Permissions]
+  end
+
+  subgraph Core[Domain core]
+    PRG[Study Programs]
+    Y[Study Years]
+    SBJ[Subjects]
+    PROFS[Professors]
+    STUDS[Students]
+    RM[Rooms]
+    CLS[Class Sessions]
+    EX[Exams]
+    BK[Bookings/Reservations]
+    CC[Conflict Checker]
+  end
+
+  subgraph Dash[Dashboards]
+    DPROF[Professor dashboard]
+    DSTUD[Student dashboard]
+    DORG[Organizer dashboard]
+    DADM[Admin dashboard]
+  end
+
+  subgraph FB[Feedback]
+    FBK[Feedback & ratings]
+    AN[Feedback analytics]
+  end
+
+  subgraph Notif[Notifications]
+    NT[Notifications (email/push)]
+  end
+
+  subgraph Int[Integrations]
+    OUTB[Outbox event store]
+    GCAL[Google Calendar sync]
+    WH[Webhooks]
+  end
+
+  subgraph AUD[Audit & history]
+    AL[Audit logs]
+  end
+
+  %% Edges
+  U --> R --> P
+  PRG --> Y --> SBJ
+  SBJ --> CLS
+  SBJ --> EX
+  RM --> BK
+  CLS --> BK
+  EX  --> BK
+  PROFS --> CLS
+  PROFS --> EX
+  STUDS --> FBK
+  EX --> FBK
+  CLS --> FBK
+
+  DORG --> CLS
+  DORG --> EX
+  CLS --> CC
+  EX  --> CC
+  CC -->|OK| OUTB
+  OUTB --> GCAL
+  OUTB --> WH
+
+  CLS --> NT
+  EX  --> NT
+  NT --> DPROF
+  NT --> DSTUD
+
+  CLS --> DPROF
+  EX  --> DPROF
+  CLS --> DSTUD
+  EX  --> DSTUD
+  PRG --> DADM
+  Y   --> DADM
+  BK  --> DADM
+
+  CLS -.audit.-> AL
+  EX  -.audit.-> AL
+  FBK -.audit.-> AL
+  NT  -.audit.-> AL
+```
