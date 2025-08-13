@@ -119,8 +119,6 @@ This repository is for presentation purposes only. Unauthorized use, reproductio
 
 
 ```mermaid
-
-
 %%{init: {"theme":"neutral","themeVariables":{
   "primaryColor":"#6096B4",
   "secondaryColor":"#93BFCF",
@@ -162,7 +160,7 @@ flowchart TB
   end
 
   subgraph Notif[Notifications]
-    NT[Notifications (email/push)]
+    NT[Notifications (email & push)]
   end
 
   subgraph Int[Integrations]
@@ -214,4 +212,5 @@ flowchart TB
   EX  -.audit.-> AL
   FBK -.audit.-> AL
   NT  -.audit.-> AL
+
 ```
