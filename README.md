@@ -84,7 +84,7 @@ It allows administrators, professors, and students to plan and track academic ac
 </td>
 <td align="center">
 <a href="media/screenshots/02-02-Schedule-mobile.png">
-<img src="media/screenshots/02-02-Schedule-mobile.png" width="240" alt="Schedule — Mobile">
+<img src="media/screenshots/02-02-Schedule-mobile.png" width="120" alt="Schedule — Mobile">
 </a>
 </td>
 </tr>
