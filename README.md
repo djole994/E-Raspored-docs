@@ -46,12 +46,12 @@ It allows administrators, professors, and students to plan and track academic ac
 <tr>
 <td align="center">
 <a href="media/screenshots/01-02-Dashboard-desktop.png">
-<img src="media/screenshots/01-02-Dashboard-desktop.png" width="520" alt="Login — Desktop">
+<img src="media/screenshots/01-02-Dashboard-desktop.png" width="520" alt="Dashboard — Desktop">
 </a>
 </td>
 <td align="center">
 <a href="media/screenshots/01-01-Dashboard-mobile.png">
-<img src="media/screenshots/01-01-Dashboard-mobile.png" width="120" alt="Login — Mobile">
+<img src="media/screenshots/01-01-Dashboard-mobile.png" width="120" alt="Dashboard — Mobile">
 </a>
 </td>
 </tr>
@@ -92,6 +92,37 @@ It allows administrators, professors, and students to plan and track academic ac
 </table>
 </details>
 
+
+
+
+<details>
+<summary><b>📝 Exam — click to expand</b></summary>
+
+<br/>
+
+<table>
+<thead>
+<tr>
+<th align="center">Exam Create — Desktop</th>
+<th align="center">Exam Options — Mobile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">
+<a href="media/screenshots/03-01-ExamCr-Desktop.png">
+<img src="media/screenshots/03-01-ExamCr-Desktop.png" width="520" alt="ExamCr — Desktop">
+</a>
+</td>
+<td align="center">
+<a href="media/screenshots/03-02-ExamOpt-mobile.png">
+<img src="media/screenshots/03-02-ExamOpt-mobile.png" width="120" alt="ExamOpt — Mobile">
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</details>
 
 
 
