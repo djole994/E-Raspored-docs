@@ -44,3 +44,18 @@ Add a data analytics module to provide:
 • Room utilization reports  
 • Student performance reports by subject
 </details>
+
+<details>
+  <summary><b>6) Localization (English)</b></summary>
+
+Plan to add full English UI and prepare the app for multiple languages (i18n).
+
+- [ ] Extract all UI strings (backend .resx, frontend JSON)
+- [ ] ASP.NET Core: IStringLocalizer + middleware for culture
+- [ ] React: i18next/react-i18next setup
+- [ ] Language switcher in header (persist to profile/localStorage)
+- [ ] Date/number/time formatting via Intl API
+- [ ] Pluralization & interpolation rules
+- [ ] Fallback for missing keys + logging
+- [ ] Translation workflow (files + review)
+</details>
