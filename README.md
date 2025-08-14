@@ -157,6 +157,29 @@ It allows administrators, professors, and students to plan and track academic ac
 
 
 
+<details>
+<summary><b>🖨️ Print — click to expand</b></summary>
+
+<br/>
+
+<table>
+<thead>
+<tr>
+<th align="center">Print — Desktop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">
+<a href="media/screenshots/05-01-Print.png">
+<img src="media/screenshots/05-01-Print.png" width="520" alt="Print — Desktop">
+</a>
+</tr>
+</tbody>
+</table>
+</details>
+
+
 
 <details>
 <summary>📸 Admin Dashboard</summary>
