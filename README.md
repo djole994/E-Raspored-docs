@@ -29,6 +29,38 @@ It allows administrators, professors, and students to plan and track academic ac
 ---
 
 ## 📸 Screenshots
+
+<details>
+<summary><b>🔐 Auth screens — klikni za prikaz</b></summary>
+
+<br/>
+
+<table>
+<thead>
+<tr>
+<th align="center">Dashboard — Desktop</th>
+<th align="center">Dashboard — Mobile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">
+<a href="media/screenshots/01-02-Dashboard-desktop.png">
+<img src="media/screenshots/01-02-Dashboard-desktop.png" width="520" alt="Login — Desktop">
+</a>
+</td>
+<td align="center">
+<a href="media/screenshots/01-01-Dashboard-mobile.png">
+<img src="media/screenshots/01-01-Dashboard-mobile.png" width="240" alt="Login — Mobile">
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+
+
 <details>
 <summary>📸 Admin Dashboard</summary>
 
