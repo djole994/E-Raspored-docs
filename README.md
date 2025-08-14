@@ -31,7 +31,7 @@ It allows administrators, professors, and students to plan and track academic ac
 ## 📸 Screenshots
 
 <details>
-<summary><b>🔐 Auth screens — klikni za prikaz</b></summary>
+<summary><b>📊 Dashboard — click to expand</b></summary>
 
 <br/>
 
