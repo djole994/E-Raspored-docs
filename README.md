@@ -61,6 +61,41 @@ It allows administrators, professors, and students to plan and track academic ac
 
 
 
+
+
+<details>
+<summary><b>📅 Schedule — click to expand</b></summary>
+
+<br/>
+
+<table>
+<thead>
+<tr>
+<th align="center">Schedule — Desktop</th>
+<th align="center">Schedule — Mobile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">
+<a href="media/screenshots/02-01-Schedule-Desktop.png">
+<img src="media/screenshots/02-01-Schedule-Desktop.png" width="520" alt="Schedule — Desktop">
+</a>
+</td>
+<td align="center">
+<a href="media/screenshots/02-02-Schedule-mobile.png">
+<img src="media/screenshots/02-02-Schedule-mobile.png" width="240" alt="Schedule — Mobile">
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+
+
+
+
 <details>
 <summary>📸 Admin Dashboard</summary>
 
