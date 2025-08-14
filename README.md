@@ -126,6 +126,37 @@ It allows administrators, professors, and students to plan and track academic ac
 
 
 
+<details>
+<summary><b>🧑‍🎓 Student — click to expand</b></summary>
+
+<br/>
+
+<table>
+<thead>
+<tr>
+<th align="center">Student Dashboard — Desktop</th>
+<th align="center">Student HelpWidget — Mobile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">
+<a href="media/screenshots/04-01-Student-Desktop.png">
+<img src="media/screenshots/04-01-Student-Desktop.png" width="520" alt="StudentDash — Desktop">
+</a>
+</td>
+<td align="center">
+<a href="media/screenshots/04-02-Student-HelpWidget-mobile.png">
+<img src="media/screenshots/04-02-Student-HelpWidget-mobile.png" width="120" alt="HelpWidget — Mobile">
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+
+
 
 <details>
 <summary>📸 Admin Dashboard</summary>
