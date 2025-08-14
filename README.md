@@ -181,53 +181,40 @@ It allows administrators, professors, and students to plan and track academic ac
 
 
 
-<details>
-<summary>📸 Admin Dashboard</summary>
-
-![Dashboard](media/screenshots/01-admin-dashboard.png)
-
-</details>
 
 <details>
-<summary>📸 Admin Users</summary>
+<summary><b>🛡️ Admin — click to expand</b></summary>
 
-![Admin-Users](media/screenshots/02-admin-users.png)
+<br/>
 
-</details>
-
-<details>
-<summary>📸 Schedule – Desktop</summary>
-
-![Nastava-Desktop](media/screenshots/03-nastava-desktop.png)
-
-</details>
-
-<details>
-<summary>📸 Schedule – Mobile</summary>
-
-![Nastava-Mobile](media/screenshots/04-nastava-mobile.png)
-
-</details>
-
-<details>
-<summary>📸 Exam – Overview</summary>
-
-![Ispit-View](media/screenshots/05-ispit-view.png)
-
-</details>
-
-<details>
-<summary>📸 Exam – Create</summary>
-
-![Ispit-Create](media/screenshots/06-ispit-create.png)
-
-</details>
-
-<details>
-<summary>📸 Student Dashboard & Feedback & Help Widget</summary>
-
-![Student-Dashboard](media/screenshots/07-studentdash-rate-helpwidget.png)
-
+<table>
+<thead>
+<tr>
+<th align="center">Admin Sync GCalendar — Desktop</th>
+<th align="center">Admin Notifications — Desktop</th>
+<th align="center">Admin Manage Users — Mobile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">
+<a href="media/screenshots/06-02-Admin-SyncGCal.png">
+<img src="media/screenshots/06-02-Admin-SyncGCal.png" width="520" alt="Sync GCal — Desktop">
+</a>
+</td>
+  <td align="center">
+<a href="media/screenshots/06-03-Admin-Not.png">
+<img src="media/screenshots/06-03-Admin-Not.png" width="520" alt="Admin Notifications — Desktop">
+</a>
+</td>
+<td align="center">
+<a href="media/screenshots/06-01-Admin-ManageUsers.png.png">
+<img src="media/screenshots/06-01-Admin-ManageUsers.png" width="120" alt="ManageUsers — Mobile">
+</a>
+</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 
