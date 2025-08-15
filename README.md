@@ -222,9 +222,9 @@ More in the **[screenshot gallery](media/screenshots/)**.
 
 ---
 
-## 🎥 Demo Video
-[▶ Watch the demo](media/demo.mp4)  
-*(or request a live demo via email)*
+## 🎥 Quick tour
+[▶ Validation - save + calendar exam](media/gif/01-exam-create.gif)  
+
 
 ---
 
