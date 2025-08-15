@@ -193,6 +193,7 @@ It allows administrators, professors, and students to plan and track academic ac
 <th align="center">Admin Sync GCalendar — Desktop</th>
 <th align="center">Admin Notifications — Desktop</th>
 <th align="center">Admin Manage Users — Mobile</th>
+  <th align="center">Admin Audit Logs — Desktop</th>
 </tr>
 </thead>
 <tbody>
@@ -210,6 +211,11 @@ It allows administrators, professors, and students to plan and track academic ac
 <td align="center">
 <a href="media/screenshots/06-01-Admin-ManageUsers.png.png">
 <img src="media/screenshots/06-01-Admin-ManageUsers.png" width="120" alt="ManageUsers — Mobile">
+</a>
+</td>
+  <td align="center">
+<a href="media/screenshots/06-04-Audit-log.png">
+<img src="media/screenshots/06-04-Audit-log.png" width="120" alt="Audit Logs — Desktop">
 </a>
 </td>
 </tr>
