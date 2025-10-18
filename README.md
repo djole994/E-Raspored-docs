@@ -241,7 +241,8 @@ More in the **[screenshot gallery](media/screenshots/)**.
 ---
 
 ## 🎥 Quick tour
-[▶ Watch the full 1:05 demo (MP4)](https://github.com/djole994/E-Raspored-docs/releases/download/v0.1.0/E-Raspored.mp4)
+[▶ Watch the full 1:05 demo (MP4)(download link)](https://github.com/djole994/E-Raspored-docs/releases/download/v0.1.0/E-Raspored.mp4)
+
 [▶ Validation - save + calendar exam](media/gif/01-exam-create.gif)  
 
 
