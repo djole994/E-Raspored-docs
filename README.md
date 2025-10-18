@@ -241,6 +241,7 @@ More in the **[screenshot gallery](media/screenshots/)**.
 ---
 
 ## 🎥 Quick tour
+[▶ Watch the full 1:05 demo (MP4)](https://github.com/<user>/<repo>/releases/download/<tag>/eraspored-demo-1080p.mp4)
 [▶ Validation - save + calendar exam](media/gif/01-exam-create.gif)  
 
 
