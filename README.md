@@ -15,6 +15,12 @@ The goal is to reduce manual work, prevent conflicts, and make schedules transpa
 
 ---
 
+## 📈 Adoption (Production Use)
+- 10+ study programs
+- 2,500+ students, 240+ professors
+- Thousands of scheduled events per semester
+
+
 ## 🚀 Key Features
 - Centralized scheduling for classes and exams
 - Conflict detection for rooms and time slots
