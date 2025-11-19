@@ -43,15 +43,15 @@ The goal is to reduce manual work, prevent conflicts, and make schedules transpa
 ## 📸 Screenshots
 
 <details>
-<summary><b>📊 Dashboard — click to expand</b></summary>
+<summary><b>📊 Dashboard - click to expand</b></summary>
 
 <br/>
 
 <table>
 <thead>
 <tr>
-<th align="center">Dashboard — Desktop</th>
-<th align="center">Dashboard — Mobile</th>
+<th align="center">Dashboard - Desktop</th>
+<th align="center">Dashboard - Mobile</th>
 </tr>
 </thead>
 <tbody>
@@ -76,15 +76,15 @@ The goal is to reduce manual work, prevent conflicts, and make schedules transpa
 
 
 <details>
-<summary><b>📅 Schedule — click to expand</b></summary>
+<summary><b>📅 Schedule - click to expand</b></summary>
 
 <br/>
 
 <table>
 <thead>
 <tr>
-<th align="center">Schedule — Desktop</th>
-<th align="center">Schedule — Mobile</th>
+<th align="center">Schedule - Desktop</th>
+<th align="center">Schedule - Mobile</th>
 </tr>
 </thead>
 <tbody>
@@ -108,15 +108,15 @@ The goal is to reduce manual work, prevent conflicts, and make schedules transpa
 
 
 <details>
-<summary><b>📝 Exam — click to expand</b></summary>
+<summary><b>📝 Exam - click to expand</b></summary>
 
 <br/>
 
 <table>
 <thead>
 <tr>
-<th align="center">Exam Create — Desktop</th>
-<th align="center">Exam Options — Mobile</th>
+<th align="center">Exam Create - Desktop</th>
+<th align="center">Exam Options - Mobile</th>
 </tr>
 </thead>
 <tbody>
@@ -139,15 +139,15 @@ The goal is to reduce manual work, prevent conflicts, and make schedules transpa
 
 
 <details>
-<summary><b>🧑‍🎓 Student — click to expand</b></summary>
+<summary><b>🧑‍🎓 Student - click to expand</b></summary>
 
 <br/>
 
 <table>
 <thead>
 <tr>
-<th align="center">Student Dashboard — Desktop</th>
-<th align="center">Student HelpWidget — Mobile</th>
+<th align="center">Student Dashboard - Desktop</th>
+<th align="center">Student HelpWidget - Mobile</th>
 </tr>
 </thead>
 <tbody>
@@ -170,14 +170,14 @@ The goal is to reduce manual work, prevent conflicts, and make schedules transpa
 
 
 <details>
-<summary><b>🖨️ Print — click to expand</b></summary>
+<summary><b>🖨️ Print - click to expand</b></summary>
 
 <br/>
 
 <table>
 <thead>
 <tr>
-<th align="center">Print — Desktop</th>
+<th align="center">Print - Desktop</th>
 </tr>
 </thead>
 <tbody>
@@ -195,17 +195,17 @@ The goal is to reduce manual work, prevent conflicts, and make schedules transpa
 
 
 <details>
-<summary><b>🛡️ Admin — click to expand</b></summary>
+<summary><b>🛡️ Admin - click to expand</b></summary>
 
 <br/>
 
 <table>
 <thead>
 <tr>
-<th align="center">Admin Sync GCalendar — Desktop</th>
-<th align="center">Admin Notifications — Desktop</th>
-<th align="center">Admin Manage Users — Mobile</th>
-  <th align="center">Admin Audit Logs — Desktop</th>
+<th align="center">Admin Sync GCalendar - Desktop</th>
+<th align="center">Admin Notifications - Desktop</th>
+<th align="center">Admin Manage Users - Mobile</th>
+  <th align="center">Admin Audit Logs - Desktop</th>
 </tr>
 </thead>
 <tbody>
