@@ -1,4 +1,4 @@
-# E-Raspored — Academic Scheduling & Exam Management
+# E-Raspored - Academic Scheduling & Exam Management
 
 E-Raspored is a modern academic scheduling system for managing classes, exams, and resources in educational institutions.  
 It allows administrators, professors, and students to plan and track academic activities in one place, with Google Calendar integration.
