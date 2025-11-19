@@ -9,7 +9,7 @@ It allows administrators, professors, and students to plan and track academic ac
 > Who is this for & what problem it solves
 eRaspored is built for three groups:
 • Scheduling office / administrators – plan timetables and exams faster, detect room conflicts and lecturer workload at a glance, and coordinate changes safely.
-• Teaching staff – get a filtered view of your own classes and exams, see room and group assignments, and receive notifications for changes.
+• Teaching staff - get a filtered view of your own classes and exams, see room and group assignments, and receive notifications for changes.
 • Students – see a personalized timetable (by year/group), upcoming exams, and submit quick feedback on courses and exam sessions.
 The goal is to reduce manual work, prevent conflicts, and make schedules transparent for everyone.
 
