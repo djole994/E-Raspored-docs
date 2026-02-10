@@ -17,9 +17,9 @@ E-Raspored is an academic scheduling and exam management system that helps insti
 
 E-Raspored is built for three groups:
 
-- **Scheduling office / administrators** — build timetables and exam sessions faster, detect room conflicts and lecturer workload at a glance, and coordinate changes safely.
-- **Teaching staff** — view only your own classes/exams, see room & group assignments, and get notified when something changes.
-- **Students** — access a personalized timetable (year/group), upcoming exams, and submit quick feedback on courses and exam sessions.
+- **Scheduling office / administrators** - build timetables and exam sessions faster, detect room conflicts and lecturer workload at a glance, and coordinate changes safely.
+- **Teaching staff** - view only your own classes/exams, see room & group assignments, and get notified when something changes.
+- **Students** - access a personalized timetable (year/group), upcoming exams, and submit quick feedback on courses and exam sessions.
 
 **Goal:** reduce manual work, prevent scheduling conflicts, and make schedules transparent for everyone.
 
