@@ -1,17 +1,23 @@
-# E-Raspored - Academic Scheduling & Exam Management
+# E-Raspored - Scheduling that prevents conflicts
 
-E-Raspored is a modern academic scheduling system for managing classes, exams, and resources in educational institutions.  
-It allows administrators, professors, and students to plan and track academic activities in one place, with Google Calendar integration.
+E-Raspored is an academic scheduling and exam management system that **helps institutions plan classes and exams faster**, track **room/lecturer workload**, and keep everyone synced via **Google Calendar integration**.
 
-> **Note:**  
-> This repository contains **only documentation, screenshots, and demo materials**.  
-> The source code is proprietary and not publicly available.
-> Who is this for & what problem it solves
-eRaspored is built for three groups:
-• Scheduling office / administrators – plan timetables and exams faster, detect room conflicts and lecturer workload at a glance, and coordinate changes safely.
-• Teaching staff - get a filtered view of your own classes and exams, see room and group assignments, and receive notifications for changes.
-• Students – see a personalized timetable (by year/group), upcoming exams, and submit quick feedback on courses and exam sessions.
-The goal is to reduce manual work, prevent conflicts, and make schedules transparent for everyone.
+> **Public Showcase (Docs-only)**
+>
+> This repository contains **documentation, screenshots, and demo materials only**.  
+> The full production codebase is **private/proprietary** (not publicly available).
+
+---
+
+## Who this is for & what problem it solves
+
+E-Raspored is built for three groups:
+
+- **Scheduling office / administrators** — build timetables and exam sessions faster, detect room conflicts and lecturer workload at a glance, and coordinate changes safely.
+- **Teaching staff** — view only your own classes/exams, see room & group assignments, and get notified when something changes.
+- **Students** — access a personalized timetable (year/group), upcoming exams, and submit quick feedback on courses and exam sessions.
+
+**Goal:** reduce manual work, prevent scheduling conflicts, and make schedules transparent for everyone.
 
 ---
 
