@@ -1,4 +1,4 @@
-# E-Raspored — Scheduling that prevents conflicts
+# E-Raspored -- Scheduling that prevents conflicts
 
 E-Raspored is an academic scheduling and exam management system that helps institutions plan classes and exams faster, track room/lecturer workload, and keep everyone synced via Google Calendar integration.
 
