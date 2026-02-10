@@ -1,11 +1,27 @@
-# E-Raspored - Scheduling that prevents conflicts
+# E-Raspored — Scheduling that prevents conflicts
 
-E-Raspored is an academic scheduling and exam management system that **helps institutions plan classes and exams faster**, track **room/lecturer workload**, and keep everyone synced via **Google Calendar integration**.
+E-Raspored is an academic scheduling and exam management system that helps institutions plan classes and exams faster, track room/lecturer workload, and keep everyone synced via Google Calendar integration.
 
-> **Public Showcase (Docs-only)**
+> **Public Showcase / Curated Subset**
 >
-> This repository contains **documentation, screenshots, and demo materials only**.  
-> The full production codebase is **private/proprietary** (not publicly available).
+> This repository contains a **curated public subset** of the project (selected code modules, docs, screenshots, and examples).  
+> The full production codebase is **private/proprietary** and includes additional modules, internal configuration, and institution-specific details.
+
+✅ No secrets (keys, connection strings, tokens) are included.  
+✅ No real institution data is included.  
+✅ Some implementation details are intentionally omitted.
+
+---
+
+## Who this is for & what problem it solves
+
+E-Raspored is built for three groups:
+
+- **Scheduling office / administrators** — build timetables and exam sessions faster, detect room conflicts and lecturer workload at a glance, and coordinate changes safely.
+- **Teaching staff** — view only your own classes/exams, see room & group assignments, and get notified when something changes.
+- **Students** — access a personalized timetable (year/group), upcoming exams, and submit quick feedback on courses and exam sessions.
+
+**Goal:** reduce manual work, prevent scheduling conflicts, and make schedules transparent for everyone.
 
 ---
 
