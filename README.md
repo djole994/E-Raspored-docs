@@ -281,7 +281,7 @@ Screenshots are available in the `images/` folder.
 
 Suggested screenshots:
 
-- Dashboard
+- ![Dashboard](images/dashboard.png)
 - Schedule view
 - Exam creation
 - Student dashboard
