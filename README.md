@@ -70,11 +70,18 @@ The application is hosted on a **Linux server** and runs as a `systemd` service 
 flowchart LR
     User[User] --> Nginx[Nginx Reverse Proxy]
     Nginx --> App[ASP.NET Core MVC Application]
-    App --> DB[(SQL Server)]
-    App --> Outbox[Outbox Events]
-    Outbox --> SyncService[Google Calendar Sync Service]
-    SyncService --> GCal[Google Calendar API]
-    SyncService --> Notifications[Admin Notifications]
+
+    App -->|1. Save schedule event| DB[(SQL Server)]
+    App -->|2. Create outbox record| DB
+
+    DB -->|3. Read pending outbox events| SyncService[Google Calendar Sync Service]
+
+    SyncService -->|4. Create / update event| GCal[Google Calendar API]
+    GCal -->|5. Return Google Event ID| SyncService
+
+    SyncService -->|6. Update sync status| DB
+    SyncService -->|On error / inconsistency| Notifications[Admin Notifications]
+
     DB --> Backup[Automated Backup System]
 ```
 
@@ -297,19 +304,6 @@ Suggested screenshots:
 
 Additional documentation can be found in the `docs/` folder.
 
-Suggested structure:
-
-```text
-docs/
-├── architecture.md
-├── database.md
-├── security.md
-├── backup-strategy.md
-├── google-calendar-sync.md
-├── conflict-detection.md
-└── deployment.md
-```
-
 Recommended documents:
 
 - **architecture.md** — system architecture and main modules
@@ -352,33 +346,6 @@ It does not contain:
 
 Selected code snippets may be included only for demonstration purposes.
 
-Suggested repository structure:
-
-```text
-E-Raspored/
-├── README.md
-├── docs/
-│   ├── architecture.md
-│   ├── database.md
-│   ├── security.md
-│   ├── backup-strategy.md
-│   ├── google-calendar-sync.md
-│   ├── conflict-detection.md
-│   └── deployment.md
-├── images/
-│   ├── dashboard.png
-│   ├── schedule.png
-│   ├── exam-create.png
-│   ├── student-dashboard.png
-│   ├── google-calendar-sync.png
-│   └── audit-logs.png
-├── snippets/
-│   ├── conflict-detection.cs
-│   ├── google-calendar-outbox-sync.cs
-│   ├── backup-job.sql
-│   └── authorization-policy.cs
-└── LICENSE
-```
 
 ---
 
