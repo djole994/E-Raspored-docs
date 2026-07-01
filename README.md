@@ -294,13 +294,13 @@ Additional documentation can be found in the `docs/` folder.
 
 Recommended documents:
 
-- **architecture.md** — system architecture and main modules
-- **database.md** — main entities and relationships
-- **security.md** — authentication, authorization and permissions
-- **backup-strategy.md** — full backup, transaction log backup and recovery scenarios
-- **google-calendar-sync.md** — synchronization flow and consistency checks
-- **conflict-detection.md** — conflict detection logic
-- **deployment.md** — Linux hosting, Nginx and systemd setup
+- **architecture.md** - system architecture and main modules
+- **database.md** - main entities and relationships
+- **security.md** - authentication, authorization and permissions
+- **backup-strategy.md** - full backup, transaction log backup and recovery scenarios
+- **google-calendar-sync.md** - synchronization flow and consistency checks
+- **conflict-detection.md** - conflict detection logic
+- **deployment.md** - Linux hosting, Nginx and systemd setup
 
 ---
 
