@@ -162,6 +162,9 @@ flowchart TD
     S2[External SSD]
     S3[Google Drive]
 
+    GCal[Google Calendar]
+    Recovery[Controlled recovery of missing events]
+
     DB --> FB
     DB --> LB
 
@@ -172,6 +175,9 @@ flowchart TD
     LB --> S1
     LB --> S2
     LB --> S3
+
+    GCal --> Recovery
+    Recovery --> DB
 ```
 
 In case of inconsistency between the database and Google Calendar, the system includes controlled recovery methods for pulling events either from the database or from Google Calendar, depending on the failure scenario.
