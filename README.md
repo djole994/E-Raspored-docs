@@ -282,14 +282,14 @@ Screenshots are available in the `images/` folder.
 Suggested screenshots:
 
 
-- ![Dashboard](images/images/01-02-Dashboard-desktop.png) 
-- ![Schedule view](images/02-01-Schedule-Desktop.png)
-- ![Exam creation](images/03-01-ExamCr-Desktop.png)
-- ![Student dashboard](images/04-01-Student-Desktop.png)
-- ![Google Calendar sync panel](images/06-02-Admin-SyncGCal.png)
-- ![Admin notifications](images/06-03-Admin-Not.png)
-- ![Audit logs](images/06-04-Audit-log.png)
-- ![Mobile views](images/04-02-Student-HelpWidget-mobile.png)
+- [Dashboard](images/01-02-Dashboard-desktop.png) 
+- [Schedule view](images/02-01-Schedule-Desktop.png)
+- [Exam creation](images/03-01-ExamCr-Desktop.png)
+- [Student dashboard](images/04-01-Student-Desktop.png)
+- [Google Calendar sync panel](images/06-02-Admin-SyncGCal.png)
+- [Admin notifications](images/06-03-Admin-Not.png)
+- [Audit logs](images/06-04-Audit-log.png)
+- [Mobile views](images/04-02-Student-HelpWidget-mobile.png)
 
 ---
 
