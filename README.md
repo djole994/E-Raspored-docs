@@ -281,7 +281,7 @@ Screenshots are available in the `images/` folder.
 
 Suggested screenshots:
 
-```md
+
 - ![Dashboard](images/images/01-02-Dashboard-desktop.png) 
 - ![Schedule view](images/02-01-Schedule-Desktop.png)
 - ![Exam creation](images/03-01-ExamCr-Desktop.png)
@@ -290,14 +290,6 @@ Suggested screenshots:
 - ![Admin notifications](images/06-03-Admin-Not.png)
 - ![Audit logs](images/06-04-Audit-log.png)
 - ![Mobile views](images/04-02-Student-HelpWidget-mobile.png)
-```
-Example:
-
-```md
-![Dashboard](images/dashboard.png)
-![Schedule](images/schedule.png)
-![Google Calendar Sync](images/google-calendar-sync.png)
-```
 
 ---
 
