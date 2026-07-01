@@ -131,24 +131,6 @@ The system is integrated with Google Calendar in order to keep academic schedule
 
 When an organizer creates or updates an event, the event is first saved in the local database. After that, an outbox event is created and processed by a background synchronization service.
 
-```mermaid
-sequenceDiagram
-    participant Organizer
-    participant App
-    participant Database
-    participant Outbox
-    participant SyncService
-    participant GoogleCalendar
-
-    Organizer->>App: Create or update schedule event
-    App->>Database: Save event
-    App->>Outbox: Create sync event
-    SyncService->>Outbox: Read pending sync events
-    SyncService->>GoogleCalendar: Create/update calendar event
-    GoogleCalendar-->>SyncService: Return Google Event ID
-    SyncService->>Database: Update synchronization status
-```
-
 This approach prevents data loss if Google Calendar is temporarily unavailable or if the server does not have internet access at the moment of event creation.
 
 The system also includes a synchronization consistency service that compares local database records with Google Calendar events and notifies administrators if differences are detected.
@@ -171,16 +153,25 @@ The backup strategy includes:
 
 ```mermaid
 flowchart TD
-    DB[(SQL Server Database)] --> FullBackup[Full Backup - every 24h]
-    DB --> LogBackup[Transaction Log Backup - every 15min]
+    DB[(SQL Server Database)]
 
-    FullBackup --> Server[Server Storage]
-    FullBackup --> SSD[External SSD]
-    FullBackup --> GDrive[Google Drive]
+    FB[Full Backup<br/>every 24h]
+    LB[Transaction Log Backup<br/>every 15 min]
 
-    LogBackup --> Server
-    LogBackup --> SSD
-    LogBackup --> GDrive
+    S1[Server Storage]
+    S2[External SSD]
+    S3[Google Drive]
+
+    DB --> FB
+    DB --> LB
+
+    FB --> S1
+    FB --> S2
+    FB --> S3
+
+    LB --> S1
+    LB --> S2
+    LB --> S3
 ```
 
 In case of inconsistency between the database and Google Calendar, the system includes controlled recovery methods for pulling events either from the database or from Google Calendar, depending on the failure scenario.
