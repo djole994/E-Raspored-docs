@@ -248,8 +248,8 @@ E-Raspored is built for three groups:
 </a>
 </td>
   <td align="center">
-<a href="media/screenshots/06-04-Audit-log.png">
-<img src="media/screenshots/06-04-Audit-log.png" width="120" alt="Audit Logs — Desktop">
+<a href="images/06-04-Audit-log.png">
+<img src="images/06-04-Audit-log.png" width="120" alt="Audit Logs — Desktop">
 </a>
 </td>
 </tr>
