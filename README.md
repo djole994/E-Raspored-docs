@@ -79,13 +79,13 @@ E-Raspored is built for three groups:
 <tbody>
 <tr>
 <td align="center">
-<a href="media/screenshots/01-02-Dashboard-desktop.png">
-<img src="media/screenshots/01-02-Dashboard-desktop.png" width="520" alt="Dashboard — Desktop">
+<a href="images/01-02-Dashboard-desktop.png">
+<img src="images/01-02-Dashboard-desktop.png" width="520" alt="Dashboard — Desktop">
 </a>
 </td>
 <td align="center">
-<a href="media/screenshots/01-01-Dashboard-mobile.png">
-<img src="media/screenshots/01-01-Dashboard-mobile.png" width="120" alt="Dashboard — Mobile">
+<a href="images/01-01-Dashboard-mobile.png">
+<img src="images/01-01-Dashboard-mobile.png" width="120" alt="Dashboard — Mobile">
 </a>
 </td>
 </tr>
@@ -112,13 +112,13 @@ E-Raspored is built for three groups:
 <tbody>
 <tr>
 <td align="center">
-<a href="media/screenshots/02-01-Schedule-Desktop.png">
-<img src="media/screenshots/02-01-Schedule-Desktop.png" width="520" alt="Schedule — Desktop">
+<a href="images/02-01-Schedule-Desktop.png">
+<img src="images/02-01-Schedule-Desktop.png" width="520" alt="Schedule — Desktop">
 </a>
 </td>
 <td align="center">
-<a href="media/screenshots/02-02-Schedule-mobile.png">
-<img src="media/screenshots/02-02-Schedule-mobile.png" width="120" alt="Schedule — Mobile">
+<a href="images/02-02-Schedule-mobile.png">
+<img src="images/02-02-Schedule-mobile.png" width="120" alt="Schedule — Mobile">
 </a>
 </td>
 </tr>
@@ -144,13 +144,13 @@ E-Raspored is built for three groups:
 <tbody>
 <tr>
 <td align="center">
-<a href="media/screenshots/03-01-ExamCr-Desktop.png">
-<img src="media/screenshots/03-01-ExamCr-Desktop.png" width="520" alt="ExamCr — Desktop">
+<a href="images/03-01-ExamCr-Desktop.png">
+<img src="images/03-01-ExamCr-Desktop.png" width="520" alt="ExamCr — Desktop">
 </a>
 </td>
 <td align="center">
-<a href="media/screenshots/03-02-ExamOpt-mobile.png">
-<img src="media/screenshots/03-02-ExamOpt-mobile.png" width="120" alt="ExamOpt — Mobile">
+<a href="images/03-02-ExamOpt-mobile.png">
+<img src="images/03-02-ExamOpt-mobile.png" width="120" alt="ExamOpt — Mobile">
 </a>
 </td>
 </tr>
@@ -175,13 +175,13 @@ E-Raspored is built for three groups:
 <tbody>
 <tr>
 <td align="center">
-<a href="media/screenshots/04-01-Student-Desktop.png">
-<img src="media/screenshots/04-01-Student-Desktop.png" width="520" alt="StudentDash — Desktop">
+<a href="images/04-01-Student-Desktop.png">
+<img src="images/04-01-Student-Desktop.png" width="520" alt="StudentDash — Desktop">
 </a>
 </td>
 <td align="center">
-<a href="media/screenshots/04-02-Student-HelpWidget-mobile.png">
-<img src="media/screenshots/04-02-Student-HelpWidget-mobile.png" width="120" alt="HelpWidget — Mobile">
+<a href="images/04-02-Student-HelpWidget-mobile.png">
+<img src="images/04-02-Student-HelpWidget-mobile.png" width="120" alt="HelpWidget — Mobile">
 </a>
 </td>
 </tr>
@@ -205,8 +205,8 @@ E-Raspored is built for three groups:
 <tbody>
 <tr>
 <td align="center">
-<a href="media/screenshots/05-01-Print.png">
-<img src="media/screenshots/05-01-Print.png" width="520" alt="Print — Desktop">
+<a href="images/05-01-Print.png">
+<img src="images/05-01-Print.png" width="520" alt="Print — Desktop">
 </a>
 </tr>
 </tbody>
@@ -233,18 +233,18 @@ E-Raspored is built for three groups:
 <tbody>
 <tr>
 <td align="center">
-<a href="media/screenshots/06-02-Admin-SyncGCal.png">
-<img src="media/screenshots/06-02-Admin-SyncGCal.png" width="520" alt="Sync GCal — Desktop">
+<a href="images/06-02-Admin-SyncGCal.png">
+<img src="images/06-02-Admin-SyncGCal.png" width="520" alt="Sync GCal — Desktop">
 </a>
 </td>
   <td align="center">
-<a href="media/screenshots/06-03-Admin-Not.png">
-<img src="media/screenshots/06-03-Admin-Not.png" width="520" alt="Admin Notifications — Desktop">
+<a href="images/06-03-Admin-Not.png">
+<img src="images/06-03-Admin-Not.png" width="520" alt="Admin Notifications — Desktop">
 </a>
 </td>
 <td align="center">
-<a href="media/screenshots/06-01-Admin-ManageUsers.png.png">
-<img src="media/screenshots/06-01-Admin-ManageUsers.png" width="120" alt="ManageUsers — Mobile">
+<a href="images/06-01-Admin-ManageUsers.png.png">
+<img src="images/06-01-Admin-ManageUsers.png" width="120" alt="ManageUsers — Mobile">
 </a>
 </td>
   <td align="center">
