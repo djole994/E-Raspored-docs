@@ -128,44 +128,8 @@ This entity stores feedback and ratings related to classes and exams.
 
 ---
 
-## 2. High-Level Relationship Diagram
 
-```mermaid
-erDiagram
-    StudyProgram ||--o{ StudyDirection : contains
-    StudyDirection ||--o{ StudyYear : has
-    StudyYear ||--o{ Subject : contains
-
-    Subject ||--o{ SubjectProfessor : assigned_to
-    Professor ||--o{ SubjectProfessor : teaches
-
-    Subject ||--o{ SubjectGroup : grouped_as
-
-    Subject ||--o{ ClassSession : has_classes
-    Subject ||--o{ Exam : has_exams
-
-    Professor ||--o{ ClassSession : teaches
-    Professor ||--o{ Exam : examines
-
-    Room ||--o{ ClassSession : used_for
-    Room ||--o{ Exam : used_for
-
-    ExamPeriod ||--o{ Exam : contains
-
-    Student ||--o{ LectureExamRating : submits
-    ClassSession ||--o{ LectureExamRating : rated
-    Exam ||--o{ LectureExamRating : rated
-
-    User ||--o{ Student : linked_to
-    User ||--o{ Professor : linked_to
-
-    ClassSession ||--o{ OutboxEvent : creates
-    Exam ||--o{ OutboxEvent : creates
-```
-
----
-
-## 3. Core Entity Overview
+## 2. Core Entity Overview
 
 ### StudyProgram
 
@@ -321,7 +285,7 @@ Stores anonymous student feedback and ratings for classes and exams.
 
 ---
 
-## 4. Identity Tables
+## 3. Identity Tables
 
 Authentication and authorization are handled through ASP.NET Core Identity.
 
@@ -344,7 +308,7 @@ The application uses role-based access control for:
 
 ---
 
-## 5. Scheduling Consistency
+## 4. Scheduling Consistency
 
 Before saving classes or exams, the system checks for conflicts between:
 
@@ -360,7 +324,7 @@ The database remains the primary source of truth for all academic scheduling dat
 
 ---
 
-## 6. Google Calendar Relationship
+## 5. Google Calendar Relationship
 
 Google Calendar is used for synchronization and visibility, but it is not the primary database.
 
@@ -375,7 +339,7 @@ This allows the system to track whether local events are correctly synchronized 
 
 ---
 
-## 7. Notes
+## 6. Notes
 
 The real production database uses localized table names, but this documentation uses English entity names for clarity and public presentation.
 
