@@ -152,26 +152,23 @@ The backup strategy includes:
 - Google Calendar recovery strategy
 
 ```mermaid
-flowchart TD
+flowchart LR
     DB[(SQL Server Database)]
 
-    FB[Full Backup<br/>every 24h]
-    LB[Transaction Log Backup<br/>every 15 min]
+    DB --> FB[Full Backup<br/>every 24h]
+    DB --> LB[Transaction Log Backup<br/>every 15 min]
 
-    S1[Server Storage]
-    S2[External SSD]
-    S3[Google Drive]
+    subgraph FullPipeline[Full Backup Pipeline]
+        FB --> FServer[Server Storage<br/>Full backup file]
+        FServer --> FSSD[External SSD<br/>Full backup copy]
+        FServer --> FDrive[Google Drive<br/>Full backup copy]
+    end
 
-    DB --> FB
-    DB --> LB
-
-    FB --> S1
-    FB --> S2
-    FB --> S3
-
-    LB --> S1
-    LB --> S2
-    LB --> S3
+    subgraph LogPipeline[Transaction Log Backup Pipeline]
+        LB --> LServer[Server Storage<br/>Log backup files]
+        LServer --> LSSD[External SSD<br/>Log backup copies]
+        LServer --> LDrive[Google Drive<br/>Log backup copies]
+    end
 ```
 
 In case of inconsistency between the database and Google Calendar, the system includes controlled recovery methods for pulling events either from the database or from Google Calendar, depending on the failure scenario.
