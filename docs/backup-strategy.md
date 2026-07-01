@@ -22,8 +22,8 @@ The backup strategy is designed to:
 
 The system uses two types of SQL Server backups:
 
-- **Full Backup** — every 24 hours
-- **Transaction Log Backup** — every 15 minutes
+- **Full Backup** - every 24 hours
+- **Transaction Log Backup** - every 15 minutes
 
 Full backups provide a complete database copy.  
 Transaction log backups reduce potential data loss by allowing recovery closer to the moment before failure.
