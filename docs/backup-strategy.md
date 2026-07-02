@@ -135,7 +135,6 @@ flowchart TD
 ## 7. Summary
 
 The backup strategy combines:
-
 - full database backups
 - transaction log backups
 - multiple backup locations
